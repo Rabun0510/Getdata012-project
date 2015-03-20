@@ -38,10 +38,14 @@ data <- select(allData, contains("mean"), contains("std"))
 
 #Merge data with activity and subject labels
 data <- cbind(subject, label, data)
-#data <- merge(data, activityLabels, by.x = "ActivityLabel", by.y = "V1")
+
+#Use the merge function to substitute the activity labels with activity names
 data <- merge(activityLabels,data, by.x = "V1", by.y = "ActivityLabel")
 data <- select(data, -V1)
 data <- rename(data, activityLabel = V2)
 
-aggData <- aggregate(data, by=list(Activity=data$activityLabel, Subject=data$SubjectLabel), FUN=mean)
-aggData <- select(aggData, -c(activityLabel, SubjectLabel))
+#Use the aggregate function to determine the mean of all the variables over each subject and each activity
+outputData <- aggregate(data, by=list(Activity=data$activityLabel, Subject=data$SubjectLabel), FUN=mean)
+outputData <- select(outputData, -c(activityLabel, SubjectLabel))
+
+write.table(outputData, "./dataset/output.txt", row.names = FALSE)
