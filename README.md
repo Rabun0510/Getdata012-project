@@ -19,7 +19,7 @@ The dataset is composed of a set of files that had to be manipulated in order to
 This file contains information about the tidy dataset that was creating using the data as described above. 
 
 ###run_analysis.R
-This R-script file contains the source code that was written to obtain and clean the given dataset to have a output as required for the course project. A brief description of the data manipulation is given here:
+This R-script file contains the source code that was written to obtain and clean the given dataset to have a output as required for the course project.
 
 The following files from the original dataset were used. A short description of what information was obtained from each file is given:
 
@@ -33,3 +33,18 @@ train/subject_train.txt|Subject label for each corresponding observation in trai
 test/x_test.txt|Dataset that was used for testing
 test/y_test.txt|Activity labels that correspond to the test dataset
 test/subject_test/txt|Subject label for each corresponding observation in test dataset
+
+The following steps were taken to obtain the tidy dataset:
+* The training dataset and corresponding activity and subject labels were read.
+* The test dataset and corresonding activity and subject labels were read.
+* The names of all the feature variables were read.
+* The names of all the activity variables were read.
+* The test and train datasets were merged using rbind.
+* The dataset column names were changed to the names form the features.txt file (The make.names function was used to create valid names since the original feature names contain invalid characters).
+* The select function was used to select only the mean and standard deviation variables of each measurement.
+* The subject and activity labels were merged to the dataset using cbind.
+* The activity labels were substiduted with the actual names of the activities from the activity_labels.txt file.
+* The aggregate function was used to obtain the mean of all the variables for each subject and each activity.
+* The output was written to a textfile output.txt.
+
+The code is properly commented so that the implementation of each of the above mentioned steps can be easily seen in the code.
