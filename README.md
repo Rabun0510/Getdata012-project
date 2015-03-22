@@ -22,9 +22,9 @@ This file contains information about the tidy dataset that was creating using th
 This R-script file contains the source code that was written to obtain and clean the given dataset to have a output as required for the course project. A brief description of the data manipulation is given here:
 
 The following files from the original dataset was used:
-*features.txt
-*activity_labels.txt
-*train/x_train.txt
-*train/y_train.txt
-*test/x_test.txt
-*test/y_test.txt
+* features.txt
+* activity_labels.txt
+* train/x_train.txt
+* train/y_train.txt
+* test/x_test.txt
+* test/y_test.txt
