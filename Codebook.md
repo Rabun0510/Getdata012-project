@@ -22,7 +22,7 @@ This show the activity that the subject was performing. It can take on one of th
 Shows the label of the subject. It takes on the values between 1 and 30.
 
 ### Movement variables
-The averages of the following variables for each subject and activity are given:
+The averages of the following variables for each subject and activity are given ( the variables are normalized and bound within [-1,1] ):
 
 * tBodyAcc.mean.X
 * tBodyAcc.mean.Y
