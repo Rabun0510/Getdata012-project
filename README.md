@@ -3,7 +3,7 @@
 
 ##Project description
 
-The goal of this project was to use the priciples tought during this lecture to clean up the supplied dataset.
+The goal of this project was to use the principles taught during this lecture to clean up the supplied dataset.
 
 ##Dataset description
 
@@ -19,7 +19,7 @@ The dataset is composed of a set of files that had to be manipulated in order to
 This file contains information about the tidy dataset that was creating using the data as described above. 
 
 ###run_analysis.R
-This R-script file contains the source code that was written to obtain and clean the given dataset to have a output as required for the course project.
+This R-script file contains the source code that was written to obtain and clean the given dataset to have an output as required for the course project.
 
 The following files from the original dataset were used. A short description of what information was obtained from each file is given:
 
@@ -36,7 +36,7 @@ test/subject_test/txt|Subject label for each corresponding observation in test d
 
 The following steps were taken to obtain the tidy dataset:
 * The training dataset and corresponding activity and subject labels were read.
-* The test dataset and corresonding activity and subject labels were read.
+* The test dataset and corresponding activity and subject labels were read.
 * The names of all the feature variables were read.
 * The names of all the activity variables were read.
 * The test and train datasets were merged using rbind.
