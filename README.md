@@ -21,10 +21,15 @@ This file contains information about the tidy dataset that was creating using th
 ###run_analysis.R
 This R-script file contains the source code that was written to obtain and clean the given dataset to have a output as required for the course project. A brief description of the data manipulation is given here:
 
-The following files from the original dataset was used:
-* features.txt
-* activity_labels.txt
-* train/x_train.txt
-* train/y_train.txt
-* test/x_test.txt
-* test/y_test.txt
+The following files from the original dataset were used. A short description of what information was obtained from each file is given:
+
+ Filename | File content
+----------|--------------
+features.txt|Names for the each variables
+activity_labels.txt|The names for each activity
+train/x_train.txt|Dataset that was used for training
+train/y_train.txt|Activity labels that correspond to the training dataset
+train/subject_train.txt|Subject label for each corresponding observation in training dataset
+test/x_test.txt|Dataset that was used for testing
+test/y_test.txt|Activity labels that correspond to the test dataset
+test/subject_test/txt|Subject label for each corresponding observation in test dataset
